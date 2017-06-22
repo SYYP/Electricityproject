@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:apt="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    tools:context="xiangmu.bawai.com.electricityproject.fragment.HomeFragment">
+
+<!-- TODO: Update blank fragment layout -->
+    <include layout="@layout/view_home_searchbar_top"/>
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:id="@+id/tablayout_id"
+        apt:tabIndicatorColor="#ff0ce7"
+        apt:tabSelectedTextColor="#ff0ce7"
+        apt:tabTextColor="#000000"
+        android:layout_height="wrap_content">
+    </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/first_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
